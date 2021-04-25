@@ -3,14 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Packages\Application\PostUsecase;
 
 class PostsController extends Controller
 {
     private $postUsecase;
-    public function __construct($postUsecase)
+    public function __construct(PostUsecase $postUsecase)
     {
         $this->postUsecase = $postUsecase;
     }
+    
     /**
      * Display a listing of the resource.
      *

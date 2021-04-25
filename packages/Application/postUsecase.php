@@ -1,4 +1,5 @@
 <?php
+namespace Packages\Application;
 
 class PostUsecase{
     /** PostRepository $postRepository */
